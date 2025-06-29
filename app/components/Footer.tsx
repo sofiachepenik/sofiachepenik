@@ -5,6 +5,8 @@ import { useState } from 'react';
 const Footer = () => {
   const [isSubscribed, setIsSubscribed] = useState(false);
 
+  const currentYear = new Date().getFullYear();
+
   const handleNewsletterSubmit = (e: React.FormEvent) => {
     // FormSubmit will handle the submission
     setIsSubscribed(true);
@@ -128,7 +130,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-center md:text-left mb-4 md:mb-0">
               <div className="font-cursive text-2xl font-semibold text-black">Sofia Chepenik</div>
-              <p className="text-gray-600 text-sm mt-1">© 2024 All rights reserved.</p>
+              <p className="text-gray-600 text-sm mt-1">© {currentYear} All rights reserved.</p>
             </div>
             <nav className="flex space-x-6 text-sm text-gray-600" aria-label="Footer navigation">
               <a 
