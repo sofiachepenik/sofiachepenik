@@ -35,7 +35,7 @@ const Navigation = () => {
               aria-label="Sofia Chepenik - Home"
             >
               <div className="font-cursive text-2xl font-semibold text-black">Sofia</div>
-              <div className="font-cursive text-xl font-medium text-black">Chepenik</div>
+              <div className="font-cursive text-2xl font-semibold text-black">Chepenik</div>
             </Link>
           </div>
 

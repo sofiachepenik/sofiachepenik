@@ -73,12 +73,25 @@ export default function AboutPage() {
       </a>
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white" role="banner">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-bold text-black mb-6 font-cursive">
+      <section
+        className="relative min-h-[60vh] md:min-h-screen flex items-start justify-center pt-8 md:pt-16 px-4 sm:px-6 lg:px-8 bg-black"
+        role="banner"
+        style={{ minHeight: '60vh' }}
+      >
+        <img
+          src="/IMG_9468 2.JPG"
+          alt="Sofia Chepenik"
+          className="absolute inset-0 w-full h-full object-cover object-center z-0"
+          style={{ minHeight: '60vh' }}
+          loading="eager"
+        />
+        {/* Gradient overlay for readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-white/80 z-10"></div>
+        <div className="relative z-20 max-w-4xl mx-auto text-center text-white pt-4 pb-8 md:pt-8 md:pb-16">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 font-cursive drop-shadow-lg">
             About Sofia
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto drop-shadow-md">
             Empowering others to unlock their potential and create authentic, meaningful lives through mindset transformation and strategic guidance.
           </p>
           <div className="w-24 h-1 bg-[#fe019a] mx-auto"></div>
